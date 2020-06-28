@@ -1,0 +1,577 @@
+html {box-sizing:border-box;scroll-behavior: smooth;}
+*, *::before, *::after {box-sizing: inherit;}
+body {margin: 0; font-family: 'Roboto', sans-serif; font-size: 1rem;}
+
+/********************** HEADER STYLES ***********************/
+
+header {
+  height: 100vh;
+  background-image: url("./portrait.webp");
+  background-size: cover;
+  background-position: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 12%;
+  background-color: #bec8ff;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0 0 20px;
+  color: #ffffff;
+}
+
+.highlight {
+  color: #9AA9FA;
+}
+
+.header-button {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  border-width: 2px;
+  border-style: solid;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.primary-btn {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+
+.primary-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  background-color: #9AA9FA;
+  border-color: #9AA9FA;
+}
+
+.secondary-btn:hover {
+  background-color: #6d7bce;
+  border-color: #6d7bce;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+ion-icon {
+  vertical-align: middle;
+}
+
+/********************** ABOUT STYLES ***********************/
+
+h2 {
+  font-family: serif;
+  position: relative;
+  z-index: 10;
+  color: #353f79;
+  margin-bottom: 20%;
+}
+
+h3 {
+  color: #9AA9FA;
+  font-family: serif;
+  font-weight: 400;
+}
+
+h2, h3 {
+  font-family: 'Roboto Slab', serif;
+}
+
+p {
+  font-weight: 300;
+}
+
+.light-bg {
+  background-color: #ffffff;
+  padding: 3% 12%;
+}
+
+.dark-bg {
+  background-color: #f5f5f5;
+  padding: 3% 12%;
+}
+
+#profile {
+  background-image: url(./talei.png);
+  border-radius: 100%;
+  width: 125px;
+  height: 125px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #9AA9FA;
+  box-shadow: 4px 6px 11px -5px #888888;
+}
+
+.section-header {
+  position: relative;
+}
+
+/********************** WHAT I DO STYLES ***********************/
+
+.skill {
+  margin: 20% 0;
+}
+
+#whatido p {
+  margin: 0;
+}
+
+#whatido h3 {
+  margin: 10px 0;
+}
+
+.web-icon {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.web-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+/********************** PROJECT STYLES ***********************/
+
+.project {
+  margin-bottom: 20%;
+}
+
+.project-button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  border-width: 2px;
+  border-style: solid;
+  transition: 0.5s;
+}
+
+.demo-btn {
+  border-color: #9AA9FA;
+  color: #9AA9FA;
+}
+
+.code-btn {
+  background-color: #9AA9FA;
+  border-color: #9AA9FA;
+  color: #ffffff;
+}
+
+.demo-btn:hover {
+  border-color: #6d7bce;
+  color: #6d7bce;
+  cursor: pointer;
+}
+
+.code-btn:hover {
+  background-color: #6d7bce;
+  border-color: #6d7bce;
+  cursor: pointer;
+}
+
+.github-link {
+  padding: 15px;
+  background-color: #E6EAFF;
+  color: #9AA9FA;
+  border-radius: 10px;
+  text-align: center;
+  font-family: serif;
+  font-size: 1.25rem;
+  box-shadow: 4px 6px 11px -5px #888888;
+  margin-bottom: 15%;
+}
+
+.cracked-egg-link {
+  text-decoration: underline;
+  color: #6d7bce;
+}
+
+.cracked-egg-link:visited {
+  color: #6d7bce;
+}
+
+/********************** CONTACT STYLES ***********************/
+
+.social-icons {
+  list-style: none;
+  padding-left: 0;
+}
+
+.social-icons li {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  margin: 10px 0;
+  color: #000000;
+  font-weight: 300;
+}
+
+.social-icons a:visited {
+  color: #000000;
+}
+
+i.social-icon {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  /* border-radius: 100%; */
+  color: #9AA9FA;
+  transition: 0.5s;
+}
+
+i.social-icon:hover {
+  color: #6d7bce;
+}
+
+input,textarea {
+  width: 100%;
+  border: none;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 2px 5px 6px -5px #888888;
+}
+
+input:focus,textarea:focus {
+  outline: none;
+  border: 2px solid #9AA9FA;
+}
+
+.form-btn {
+  width: 100%;
+  background-color: #9AA9FA;
+  border: none;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.form-btn:focus, .form-btn:active {
+  outline: none;
+  transform: scale(0.99);
+}
+
+.contact-form {
+  margin-top: 25%;
+}
+
+/********************** FOOTER STYLES ***********************/
+
+footer.light-bg {
+  text-align: center;
+  padding: 10% 12%;
+  color: #c8c8c8;
+}
+
+footer a {
+  color: #888888;
+  text-decoration: underline;
+}
+
+.social-footer {
+  display: flex;
+  justify-content: center;
+}
+
+i.social-footer-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  font-size: 1.15rem;
+  color: #c8c8c8;
+}
+
+@media (min-width: 768px) {
+
+  /********************** TABLET - HEADER STYLES ***********************/
+
+  header {
+    padding: 0 25%;
+    background-attachment: fixed;
+    background-image: url("./tablet.webp");
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    line-height: 1.25;
+    margin-bottom: 8%;
+
+  }
+
+  .header-button {
+    font-size: 1.25rem;
+    padding: 12px;
+  }
+
+  .primary-btn {
+    margin-right: 10px;
+  }
+
+  .secondary-btn {
+    padding: 12px 25px;
+  }
+
+  /********************** TABLET - ABOUT STYLES ***********************/
+
+
+  .light-bg, .dark-bg, footer {
+    padding-left: 22%;
+    padding-right: 22%;
+  }
+
+  .about-container {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-content {
+    width: 75%;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 10%;
+  }
+
+    /********************** TABLET - WHAT I DO STYLES ***********************/
+
+  .skill {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10% 0;
+  }
+
+  .skill-content {
+    width: 50%;
+  }
+
+  .web-icon {
+    width: 100px;
+    height: 100px;
+    background-color: #9AA9FA;
+  }
+
+  .web-icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+
+    /********************** TABLET - PROJECT STYLES ***********************/
+
+  .project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .project:nth-of-type(3) {
+    flex-direction: row-reverse;
+  }
+
+  .project p {
+    margin-bottom: 25px;
+  }
+
+  .project-pic {
+    height: 150px;
+  }
+
+  .project-content {
+    width: 50%;
+  }
+
+  .github-link {
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 15%;
+  }
+
+  /********************** TABLET - CONTACT STYLES ***********************/
+
+  .contact-content {
+    margin: auto;
+    text-align: center;
+    padding: 0 5%;
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5% 0 0;
+  }
+
+  .social-icons li {
+    width: 50%;
+  }
+
+  .contact-form {
+    margin: 10% 5% 0;
+    text-align: center;
+  }
+
+  .contact-form h3 {
+    text-align: center;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+  }
+
+  input {
+    width: 50%;
+  }
+
+  textarea {
+    width: 95%;
+  }
+
+  .form-btn {
+    width: 30%;
+  }
+
+  /********************** TABLET - FOOTER STYLES ***********************/
+
+    footer.light-bg {
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+}
+
+
+
+
+
+@media (min-width: 1024px) {
+  /********************** LAPTOP HEADER STYLES ***********************/
+
+  header {
+    background-image: url("./laptop.webp");
+  }
+
+  h1 {
+    font-size: 2.75rem;
+    margin-bottom: 5%;
+  }
+
+  /********************** LAPTOP ABOUT STYLES ***********************/
+
+  #profile {
+    width: 200px;
+    height: 200px;
+  }
+
+  .about-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about-content {
+    width: 50%;
+    text-align: left;
+  }
+
+  .about-content h3 {
+    margin-top: 0;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 5%;
+  }
+
+  /********************** LAPTOP WHAT I DO STYLES ***********************/
+  
+  .skills {
+    display: flex;
+  }
+
+  .skill {
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0;
+  }
+
+  .web-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .web-icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .skill-content {
+    width: 75%;
+    text-align: center;
+  }
+
+  /********************** LAPTOP PROJECT STYLES ***********************/
+
+  
+  .project-pic {
+    height: 250px;
+  }
+
+  .project {
+    margin-bottom: 10%;
+  }
+
+  .light-bg, .dark-bg, footer {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .github-link {
+    margin-bottom: 15%;
+  }
+
+    /********************** LAPTOP CONTACT STYLES ***********************/
+
+    .contact-content {
+      width: 60%;
+    }
+
+    .input-container {
+      padding: 0 15px;
+    }
+
+}
