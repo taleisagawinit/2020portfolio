@@ -14,6 +14,10 @@
   <!-- FONT AWESOME -->
   <script src="https://kit.fontawesome.com/2c3531125f.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./site.webmanifest">
 </head>
 
 <body>
@@ -167,7 +171,7 @@
     </div>
     <div data-aos="fade-right" class="contact-form">
       <h3>Send a message.</h3>
-      <form action="">
+      <form name="contact" method="POST" data-netlify="true">
         <div class="input-container">
           <input type="text" name="name" id="name" placeholder="Your name" required>
           <input type="email" name="email" id="email" placeholder="Your email" required>
