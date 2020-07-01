@@ -1,4 +1,4 @@
-html {box-sizing:border-box; overflow-x: hidden;}
+html {box-sizing:border-box; overflow-x: hidden; scroll-behavior: smooth;}
 *, *::before, *::after {box-sizing: inherit;}
 body {margin: 0; font-family: 'Roboto', sans-serif; font-size: 1rem; overflow-x: hidden;}
 
