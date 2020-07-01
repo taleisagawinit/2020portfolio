@@ -1,11 +1,12 @@
-html {box-sizing:border-box; overflow-x: hidden; height: 100%;}
+html {box-sizing:border-box; overflow-x: hidden;}
 *, *::before, *::after {box-sizing: inherit;}
 body {margin: 0; font-family: 'Roboto', sans-serif; font-size: 1rem; overflow-x: hidden;}
 
 /********************** HEADER STYLES ***********************/
 
 header {
-  height: 100vh;
+  min-height: 100vh;
+  min-height: -webkit-fill-available; 
   background-image: url("./images/portrait1.jpg");
   background-size: cover;
   background-position: left;
