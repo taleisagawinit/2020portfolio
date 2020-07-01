@@ -1,4 +1,4 @@
-html {box-sizing:border-box;scroll-behavior: smooth;}
+html {box-sizing:border-box; overflow-x: hidden;}
 *, *::before, *::after {box-sizing: inherit;}
 body {margin: 0; font-family: 'Roboto', sans-serif; font-size: 1rem; overflow-x: hidden;}
 
@@ -6,14 +6,14 @@ body {margin: 0; font-family: 'Roboto', sans-serif; font-size: 1rem; overflow-x:
 
 header {
   height: 100vh;
-  background-image: url("./portrait.jpg");
+  background-image: url("./portrait1.jpg");
   background-size: cover;
   background-position: left;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 12%;
-  background-color: #bec8ff;
+  /* o */
 }
 
 h1 {
