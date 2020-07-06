@@ -153,6 +153,11 @@ p {
   margin-bottom: 20%;
 }
 
+.project-pic {
+  height: 250px;
+  width: 250px;
+}
+
 .project-button {
   padding: 10px 15px;
   border-radius: 5px;
