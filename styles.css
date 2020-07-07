@@ -90,6 +90,7 @@ h2, h3 {
 
 p {
   font-weight: 300;
+  line-height: 1.5;
 }
 
 .light-bg {
@@ -153,9 +154,19 @@ p {
   margin-bottom: 20%;
 }
 
+.project p {
+  margin-bottom: 5%;
+}
+
 .project-pic {
-  height: 250px;
-  width: 250px;
+  width: 150px;
+  /* width: 250px;
+  box-shadow: 4px 6px 11px -5px #888888; */
+
+}
+
+#project .laptop {
+  width: 200px;
 }
 
 .project-button {
@@ -166,6 +177,7 @@ p {
   border-width: 2px;
   border-style: solid;
   transition: 0.5s;
+  display: inline-block;
 }
 
 .demo-btn {
@@ -392,26 +404,38 @@ i.social-footer-icon {
 
     /********************** TABLET - PROJECT STYLES ***********************/
 
+    #project {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
   .project {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .project:nth-of-type(3) {
+  .project:nth-of-type(3), .project:nth-of-type(5){
     flex-direction: row-reverse;
   }
 
   .project p {
-    margin-bottom: 25px;
-  }
-
-  .project-pic {
-    height: 150px;
+    margin-bottom: 5%;
   }
 
   .project-content {
     width: 50%;
+  }
+
+  .project-pic {
+    width: 175px;
+    /* width: 250px;
+    box-shadow: 4px 6px 11px -5px #888888; */
+  
+  }
+  
+  #project .laptop {
+    width: 250px;
   }
 
   .github-link {
@@ -526,6 +550,11 @@ i.social-footer-icon {
 
   /********************** LAPTOP WHAT I DO STYLES ***********************/
   
+  #whatido {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .skills {
     display: flex;
   }
@@ -533,7 +562,7 @@ i.social-footer-icon {
   .skill {
     flex-direction: column;
     align-items: center;
-    margin: 5% 0;
+    margin: 0 0 5%;
   }
 
   .web-icon {
@@ -553,9 +582,18 @@ i.social-footer-icon {
 
   /********************** LAPTOP PROJECT STYLES ***********************/
 
+  #project {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
   
   .project-pic {
-    height: 250px;
+    width: 200px;
+    /* width: 250px; */
+  }
+
+  #project .laptop {
+    width: 300px;
   }
 
   .project {
@@ -581,4 +619,16 @@ i.social-footer-icon {
       padding: 0 15px;
     }
 
+}
+
+@media (min-width: 1300px) {
+  #project {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+  #whatido {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
 }
