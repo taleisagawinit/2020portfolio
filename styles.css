@@ -82,15 +82,30 @@ h3 {
   color: #9AA9FA;
   font-family: serif;
   font-weight: 400;
+  font-size: 1.2rem;
 }
 
 h2, h3 {
   font-family: 'Roboto Slab', serif;
 }
 
-p {
+p, ul {
   font-weight: 300;
   line-height: 1.5;
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+  text-align: left;
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #9AA9FA; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
 .light-bg {
@@ -134,9 +149,9 @@ p {
 }
 
 .web-icon {
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
+  width: 65px;
+  height: 65px;
+  background-color: #9AA9FA;
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -144,8 +159,8 @@ p {
 }
 
 .web-icon img {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
 }
 
 /********************** PROJECT STYLES ***********************/
@@ -322,6 +337,10 @@ i.social-footer-icon {
 }
 
 @media (min-width: 768px) {
+
+  p, ul {
+    font-size: 1.115rem;
+  }
 
   /********************** TABLET - HEADER STYLES ***********************/
 
@@ -562,7 +581,9 @@ i.social-footer-icon {
   .skill {
     flex-direction: column;
     align-items: center;
-    margin: 0 0 5%;
+    margin: 0 5% 5%;
+    flex: 1;
+    justify-content: flex-start;
   }
 
   .web-icon {
