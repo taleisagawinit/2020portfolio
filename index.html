@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Talei Pono</title>
+  <title>Talei's Portfolio</title>
   <!-- GOOGLE FONTS -->
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap"
@@ -65,7 +65,6 @@
             <li>JavaScript</li>
             <li>jQuery</li>
             <li>React + Redux</li>
-            <li>React Native</li>
           </ul>
         </div>
       </div>
@@ -76,10 +75,11 @@
         <div class="skill-content">
           <h3>Backend</h3>
           <ul>
-            <li>Node + Express</li>
+            <li>Node/Express.js</li>
             <li>REST APIs & JSON</li>
             <li>MySQL</li>
             <li>MongoDB</li>
+            <li>AWS</li>
           </ul>
         </div>
       </div>
@@ -90,10 +90,10 @@
         <div class="skill-content">
           <h3>Other Tech</h3>
           <ul>
-            <li>NPM + Yarn</li>
             <li>Git + Github</li>
-            <li>Postman</li>
             <li>Jest + SuperTest</li>
+            <li>NPM + Yarn</li>
+            <li>Postman</li>
           </ul>
         </div>
       </div>
@@ -103,8 +103,79 @@
     <div class="section-header">
       <h2>Projects</h2>
     </div>
+    <div data-aos="fade-right" class="project">
+      <div class="project-pic">
+        <img src="./images/365-1.png" alt="365 app screenshot">
+        <img src="./images/365-2.png" alt="365 app screenshot">
+      </div>
+      <div class="project-content">
+        <h3>365 Firsts Challenge</h3>
+        <p>MVP of a mobile app for a new local business, designed to help people try new activities and meet people
+          with similar interests. I was responsible for the design and frontend development. Uses React Native,
+          Node/Express, MongoDB and AWS</p>
+        <div>
+          <a class="project-button demo-btn" href="https://365firstschallenge.com/" target="_blank"
+            rel="noopener noreferrer">View on their webiste</a>
+        </div>
+      </div>
+    </div>
     <div data-aos="fade-left" class="project">
-      <img class="project-pic laptop" src="./images/aware.png" alt="project image">
+      <div class="project-pic">
+        <img src="./images//kana-1.png" alt="kana app screenshot">
+        <img src="./images//kana-2.png" alt="kana app screenshot">
+      </div>
+      <div class="project-content">
+        <h3>Kana</h3>
+        <p>Kana was my first large project, working with 2 other developers. The main idea was to help indecisive
+          foodies decide what they want to each for lunch, dinner, etc. using a Tinder-style swipe. I was responsible
+          for most of the frontend work. Uses React/Redux, Node/Express and mySQL.</p>
+        <div>
+          <a class="project-button demo-btn" href="https://www.youtube.com/watch?v=OTtCslLnb-U&feature=youtu.be"
+            target="_blank" rel="noopener noreferrer">Demo</a>
+          <a class="project-button code-btn" href="https://github.com/mierome16/kana-app/" target="_blank"
+            rel="noopener noreferrer">View source</a>
+        </div>
+      </div>
+    </div>
+    <div data-aos="fade-right" class="project">
+      <div class="project-pic">
+        <img src="./images/news-wide.png" alt="newsletter app laptop screenshot">
+        <img src="./images/news.png" alt="newsletter app mobile screenshot">
+      </div>
+      <div class="project-content">
+        <h3>Newsletter Signup</h3>
+        <p>App that uses MailChimp's API to subscribe users to a newsletter and send a welcome email for confirmation.
+          Created with Bootstrap and Node/Express.js.</p>
+        <div>
+          <a class="project-button demo-btn" href="https://newsletter-signup-8.herokuapp.com/" target="_blank"
+            rel="noopener noreferrer">Demo</a>
+          <a class="project-button code-btn" href="https://github.com/taleisagawinit/newsletter-nodejs" target="_blank"
+            rel="noopener noreferrer">View source</a>
+        </div>
+      </div>
+    </div>
+    <div data-aos="fade-left" class="project">
+      <div class="project-pic">
+        <img src="./images/todo-wide.png" alt="todo list app laptop screenshot">
+        <img src="./images/todo.png" alt="todo list app mobile screenshot">
+      </div>
+      <div class="project-content">
+        <h3>To-do List 2.0</h3>
+        <p>Your basic To-do List with an upgrade using Bootstrap for the design and cloud database MongoDB Atlas to
+          store separate lists.</p>
+        <div>
+          <a class="project-button demo-btn" href="https://mongo-todolist.herokuapp.com/" target="_blank"
+            rel="noopener noreferrer">Demo</a>
+          <a class="project-button code-btn" href="https://github.com/taleisagawinit/todolist-with-db" target="_blank"
+            rel="noopener noreferrer">View source</a>
+        </div>
+      </div>
+    </div>
+    <div data-aos="fade-left" class="project">
+      <div class="project-pic">
+        <img src="./images/aware-wide.png" alt="coffee shop website laptop screenshot">
+        <img src="./images/aware.png" alt="coffee shop website mobile screenshot">
+      </div>
       <div class="project-content">
         <h3>Aware Coffee</h3>
         <p>A website for a local coffee shop I enjoy going to. This business currently has no website, so I've created
@@ -113,33 +184,6 @@
           <a class="project-button demo-btn" href="https://coffee-shop-lv.netlify.app/" target="_blank"
             rel="noopener noreferrer">Live demo</a>
           <a class="project-button code-btn" href="https://github.com/taleisagawinit/coffee-shop" target="_blank"
-            rel="noopener noreferrer">View source</a>
-        </div>
-      </div>
-    </div>
-    <div data-aos="fade-right" class="project">
-      <img class="project-pic" src="./images/firsts.png" alt="project image">
-      <div class="project-content">
-        <h3>365 Firsts Challenge</h3>
-        <p>MVP of a mobile app for a new local business, designed to help people try new activities and meet people
-          with similar interests. Uses React Native, Node, MongoDB and AWS</p>
-        <div>
-          <a class="project-button demo-btn" href="https://365firstschallenge.com/" target="_blank"
-            rel="noopener noreferrer">View on their webiste</a>
-        </div>
-      </div>
-    </div>
-    <div data-aos="fade-left" class="project">
-      <img class="project-pic" src="./images/kana.png" alt="project image">
-      <div class="project-content">
-        <h3>Kana</h3>
-        <p>Kana was my first large project, working with 2 other developers. The main idea was to help indecisive
-          foodies decide what they want to each for lunch, dinner, etc. using a Tinder-style swipe. Uses React, Node and
-          mySQL.</p>
-        <div>
-          <a class="project-button demo-btn" href="https://www.youtube.com/watch?v=OTtCslLnb-U&feature=youtu.be"
-            target="_blank" rel="noopener noreferrer">Demo</a>
-          <a class="project-button code-btn" href="https://github.com/mierome16/kana-app/" target="_blank"
             rel="noopener noreferrer">View source</a>
         </div>
       </div>
