@@ -119,12 +119,12 @@ p, ul {
 }
 
 #profile {
-  background-image: url(./images/talei.png);
+  background-image: url(./images/IMG_7739-removebg-preview.png);
   border-radius: 100%;
   width: 125px;
-  height: 125px;
+  height: 135px;
   background-position: center;
-  background-size: cover;
+  background-size: 85%;
   background-repeat: no-repeat;
   background-color: #9AA9FA;
   box-shadow: 4px 6px 11px -5px #888888;
@@ -561,12 +561,12 @@ i.social-footer-icon {
   .about-container {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .about-content {
     width: 50%;
-    text-align: left;
+    text-align: center;
   }
 
   .about-content h3 {
